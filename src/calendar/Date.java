@@ -14,6 +14,9 @@ public class Date {
 		checkNumberOfDays();
 	}
 	
+	/**
+	 * sets the number of days for each month in the numberOfDays array, depending on the set year. 
+	 */
 	private void checkNumberOfDays() {
 		numberOfDays = new int[13];
 		for (int i = 1; i < 12; i++) {
@@ -34,6 +37,11 @@ public class Date {
 		}
 	}
 	
+	/**
+	 * Checks if the selected year is a leap year.
+	 * 
+	 * @return		true if leap year
+	 */
 	public boolean checkLeapYear() {
 		if (year % 400 == 0)
 			return true;
@@ -45,6 +53,11 @@ public class Date {
 			return false;
 	}
 	
+	/**
+	 * checks that the set year, month and day are correct.
+	 * 
+	 * @return		true if correct
+	 */
 	private boolean isValid() {
 		if (month < 1 || month > 12 || day < 1)
 			return false;
@@ -75,6 +88,9 @@ public class Date {
 		return true;
 	}
 	
+	/**
+	 * Sets year, month and day to the next day.
+	 */
 	public void gotoTomorrow() {
 		day++;
 		if(!isValid()) {
@@ -89,6 +105,9 @@ public class Date {
 		}
 	}
 	
+	/**
+	 * Sets year, month and day to the previous day.
+	 */
 	public void gotoYesterday() {
 		day--;
 		if(!isValid()) {

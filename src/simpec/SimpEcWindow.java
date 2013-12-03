@@ -2,9 +2,10 @@ package simpec;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 
-import javax.swing.JFrame;
 import javax.swing.JDesktopPane;
+import javax.swing.JFrame;
 
 @SuppressWarnings("serial")
 public class SimpEcWindow extends JFrame {
@@ -23,6 +24,7 @@ public class SimpEcWindow extends JFrame {
 		add(buttonPanel, BorderLayout.NORTH);
 		add(workspace, BorderLayout.CENTER);
 		
+		setMinimumSize(new Dimension(300, 300));
 		setExtendedState(MAXIMIZED_BOTH);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
