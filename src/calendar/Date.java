@@ -6,18 +6,18 @@ public class Date {
 	private int[] numberOfDays;
 	
 	public Date(int year, int month, int day) {
-		if (!isValid())
-			throw new IllegalArgumentException();
 		this.year = year;
 		this.month = month;
 		this.day = day;
-		checkNumberOfDays();
+		if (!isValid())
+			throw new IllegalArgumentException();
+		setNumberOfDays();
 	}
 	
 	/**
 	 * sets the number of days for each month in the numberOfDays array, depending on the set year. 
 	 */
-	private void checkNumberOfDays() {
+	private void setNumberOfDays() {
 		numberOfDays = new int[13];
 		for (int i = 1; i < 12; i++) {
 			if (i == 2) {
@@ -99,7 +99,7 @@ public class Date {
 			if (!isValid()) {
 				year++;
 				month = 1;
-				checkNumberOfDays();
+				setNumberOfDays();
 				day = 1;
 			}
 		}
@@ -116,7 +116,7 @@ public class Date {
 			if (!isValid()) {
 				year--;
 				month = 12;
-				checkNumberOfDays();
+				setNumberOfDays();
 				day = numberOfDays[month];
 			}
 		}
