@@ -1,4 +1,4 @@
-package simpec;
+package simpecgui;
 
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
