@@ -1,4 +1,4 @@
-package simpec.gui.table;
+package simpec.gui.internal;
 
 import java.awt.BorderLayout;
 
@@ -9,8 +9,13 @@ import javax.swing.JTextArea;
 
 import simpec.data.BasicTableData;
 
+/**
+ * SimpEcTable is the pane with the gui components inside the SimpEcTableFrame
+ * 
+ * @author Dennis von Bargen
+ */
 @SuppressWarnings("serial")
-public class SimpEcTable extends JPanel {
+public class BasicTableComponent extends SimpEcFrameComponent {
 	
 	JTabbedPane p;
 	JPanel income, expenditures, results;
@@ -18,7 +23,7 @@ public class SimpEcTable extends JPanel {
 	/**
 	 * Creates a blank table
 	 */
-	public SimpEcTable() {
+	public BasicTableComponent() {
 		initGui();
 	}
 	
@@ -27,7 +32,7 @@ public class SimpEcTable extends JPanel {
 	 * 
 	 * @param tbl	TableData
 	 */
-	public SimpEcTable(BasicTableData tbl) {
+	public BasicTableComponent(BasicTableData tbl) {
 		initGui();
 		//add TableData rows to the corresponding rows
 	}

@@ -9,8 +9,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JDesktopPane;
 import javax.swing.JFrame;
 
-import simpec.gui.table.SimpEcTableFrame;
-
+import simpec.gui.internal.SimpEcInternalFrame;
 
 @SuppressWarnings("serial")
 public class SimpEcWindow extends JFrame {
@@ -47,13 +46,13 @@ public class SimpEcWindow extends JFrame {
 	}
 	
 	private void addAllListeners() {
-		menuBar.newItem.addActionListener(new NewTableListener());
-		buttonPanel.newButton.addActionListener(new NewTableListener());
+		menuBar.newItem.addActionListener(new NewFrameListener());
+		buttonPanel.newButton.addActionListener(new NewFrameListener());
 	}
 	
-	private class NewTableListener implements ActionListener {
+	private class NewFrameListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			workspace.add(new SimpEcTableFrame("FooBar"));
+			workspace.add(new SimpEcInternalFrame("FooBar", SimpEcInternalFrame.BASIC_TABLE));
 		}
 	}
 }

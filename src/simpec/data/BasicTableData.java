@@ -10,15 +10,14 @@ import java.util.ArrayList;
  * @author Dennis von Bargen
  *
  */
-public class BasicTableData {
-	
-	public static final String FILE_EXTENSION = ".tbl";
+public class BasicTableData extends Data {
 	
 	private ArrayList<Double> income;
 	private ArrayList<Double> expenditures;
 	private ArrayList<Double> results;
 	
 	public BasicTableData() {
+		super();
 		income = new ArrayList<Double>();
 		expenditures = new ArrayList<Double>();
 		results = new ArrayList<Double>();
