@@ -2,9 +2,17 @@ package simpecdata;
 
 import java.util.ArrayList;
 
+/**
+ * This is a data structure for a basic month calculation.
+ * It contains an arraylist each for income, expenditures and results.
+ * The arraylist takes Doubles.
+ * 
+ * @author Dennis von Bargen
+ *
+ */
 public class TableData {
 	
-	public static final String APPENDIX = ".tbl";
+	public static final String FILE_EXTENSION = ".tbl";
 	
 	private ArrayList<Double> income;
 	private ArrayList<Double> expenditures;

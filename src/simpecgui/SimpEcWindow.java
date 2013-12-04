@@ -3,11 +3,11 @@ package simpecgui;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JDesktopPane;
 import javax.swing.JFrame;
-
-import simpecevents.CreateTable;
 
 @SuppressWarnings("serial")
 public class SimpEcWindow extends JFrame {
@@ -44,7 +44,13 @@ public class SimpEcWindow extends JFrame {
 	}
 	
 	private void addAllListeners() {
-		menuBar.newItem.addActionListener(new CreateTable(workspace));
-		buttonPanel.newButton.addActionListener(new CreateTable(workspace));
+		menuBar.newItem.addActionListener(new NewTableListener());
+		buttonPanel.newButton.addActionListener(new NewTableListener());
+	}
+	
+	private class NewTableListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			workspace.add(new SimpEcTableFrame("FooBar"));
+		}
 	}
 }
