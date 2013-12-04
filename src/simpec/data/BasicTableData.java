@@ -1,4 +1,4 @@
-package simpecdata;
+package simpec.data;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * @author Dennis von Bargen
  *
  */
-public class TableData {
+public class BasicTableData {
 	
 	public static final String FILE_EXTENSION = ".tbl";
 	
@@ -18,7 +18,7 @@ public class TableData {
 	private ArrayList<Double> expenditures;
 	private ArrayList<Double> results;
 	
-	public TableData() {
+	public BasicTableData() {
 		income = new ArrayList<Double>();
 		expenditures = new ArrayList<Double>();
 		results = new ArrayList<Double>();

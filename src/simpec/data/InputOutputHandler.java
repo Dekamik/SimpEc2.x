@@ -1,4 +1,4 @@
-package simpecdata;
+package simpec.data;
 
 public class InputOutputHandler {
 	

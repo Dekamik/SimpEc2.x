@@ -1,4 +1,4 @@
-package simpecgui;
+package simpec.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -8,6 +8,9 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JDesktopPane;
 import javax.swing.JFrame;
+
+import simpec.gui.table.SimpEcTableFrame;
+
 
 @SuppressWarnings("serial")
 public class SimpEcWindow extends JFrame {

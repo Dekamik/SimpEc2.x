@@ -1,4 +1,4 @@
-package simpecgui;
+package simpec.gui.table;
 
 import java.awt.BorderLayout;
 
@@ -7,7 +7,7 @@ import javax.swing.JTabbedPane;
 import javax.swing.JTable;
 import javax.swing.JTextArea;
 
-import simpecdata.TableData;
+import simpec.data.BasicTableData;
 
 @SuppressWarnings("serial")
 public class SimpEcTable extends JPanel {
@@ -16,19 +16,20 @@ public class SimpEcTable extends JPanel {
 	JPanel income, expenditures, results;
 	
 	/**
-	 * For creating a blank table
+	 * Creates a blank table
 	 */
 	public SimpEcTable() {
 		initGui();
 	}
 	
 	/**
-	 * For opening stored tables
+	 * Opens a stored basic table
 	 * 
 	 * @param tbl	TableData
 	 */
-	public SimpEcTable(TableData tbl) {
+	public SimpEcTable(BasicTableData tbl) {
 		initGui();
+		//add TableData rows to the corresponding rows
 	}
 	
 	private void initGui() {
@@ -36,9 +37,13 @@ public class SimpEcTable extends JPanel {
 		
 		p = new JTabbedPane();
 		
-		p.addTab("Income", income = createIncome());
-		p.addTab("expenditures", expenditures = createExpenditures());
-		add(results = createResults(), BorderLayout.WEST);
+		income = createIncome();
+		expenditures = createExpenditures();
+		results = createResults();
+		
+		p.addTab("Income", income);
+		p.addTab("expenditures", expenditures);
+		add(results, BorderLayout.WEST);
 		add(p, BorderLayout.CENTER);
 	}
 	

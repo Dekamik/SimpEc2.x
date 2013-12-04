@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Dec 04 15:08:32 CET 2013'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Dec 04 15:51:29 CET 2013'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -96,7 +96,7 @@
                 <UML:Parameter xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000AB2'
                   name = 'return' isSpecification = 'false' kind = 'return'>
                   <UML:Parameter.type>
-                    <UML:Class xmi.idref = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000AB3'/>
+                    <UML:Class xmi.idref = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000AB4'/>
                   </UML:Parameter.type>
                 </UML:Parameter>
               </UML:BehavioralFeature.parameter>
@@ -276,7 +276,11 @@
               isAbstract = 'false'>
               <UML:BehavioralFeature.parameter>
                 <UML:Parameter xmi.id = '-64--88-2-2-1c9e4532:142ba38e10c:-8000:00000000000008AC'
-                  name = 'return' isSpecification = 'false' kind = 'return'/>
+                  name = 'return' isSpecification = 'false' kind = 'return'>
+                  <UML:Parameter.type>
+                    <UML:Class xmi.idref = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000AB4'/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
                 <UML:Parameter xmi.id = '-64--88-2-2-1c9e4532:142ba38e10c:-8000:00000000000008AD'
                   name = 'Table' isSpecification = 'false' kind = 'in'/>
               </UML:BehavioralFeature.parameter>
@@ -357,7 +361,55 @@
         </UML:Association>
         <UML:Class xmi.id = '-64--88-2-2-1c9e4532:142ba38e10c:-8000:0000000000000897'
           name = 'Table' visibility = 'public' isSpecification = 'false' isRoot = 'false'
-          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'>
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000AB6'
+              name = 'income' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000AB7'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000AB8'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:Class xmi.idref = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000ABA'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000ABB'
+              name = 'expenditures' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000ABC'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000ABD'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:Class xmi.idref = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000ABA'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000ABE'
+              name = 'results' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000ABF'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000AC0'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:Class xmi.idref = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000ABA'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+          </UML:Classifier.feature>
+        </UML:Class>
         <UML:Association xmi.id = '-64--88-2-2-1c9e4532:142ba38e10c:-8000:0000000000000898'
           name = 'has' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
           isAbstract = 'false'>
@@ -511,6 +563,18 @@
         <UML:Class xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000AB3'
           name = 'Void' visibility = 'public' isSpecification = 'false' isRoot = 'false'
           isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000AB4'
+          name = 'void' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000AB5'
+          name = 'SimpEc' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000AB9'
+          name = 'ArrayList&lt;int&gt;' visibility = 'public' isSpecification = 'false'
+          isRoot = 'false' isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
+        <UML:Class xmi.id = '-126--27--111--47--429bfb39:142bdec3c1d:-8000:0000000000000ABA'
+          name = 'ArrayList&lt;double&gt;' visibility = 'public' isSpecification = 'false'
+          isRoot = 'false' isLeaf = 'false' isAbstract = 'false' isActive = 'false'/>
       </UML:Namespace.ownedElement>
     </UML:Model>
   </XMI.content>
@@ -672,7 +736,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >main() : Void</text>
+      >main() : void</text>
     </group>
   </group>
   <group name="Fig1"
@@ -1461,7 +1525,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >add(Table)</text>
+      >add(Table) : void</text>
     </group>
   </group>
   <group name="Fig8"
@@ -1579,7 +1643,7 @@
     </path>
   </group>
   <group name="Fig10"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[688, 592, 120, 88]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[688, 592, 187, 105]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-64--88-2-2-1c9e4532:142ba38e10c:-8000:0000000000000897"
        fill="1"
        fillcolor="white"
@@ -1592,8 +1656,8 @@
     <rectangle name="Fig10.0"
       x="688"
       y="592"
-      width="120"
-      height="88"
+      width="187"
+      height="105"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -1602,7 +1666,7 @@
     <text name="Fig10.1"
       x="689"
       y="593"
-      width="118"
+      width="185"
       height="23"
       fill="0"
       fillcolor="white"
@@ -1641,7 +1705,7 @@
     <rectangle name="Fig10.3"
       x="688"
       y="616"
-      width="120"
+      width="187"
       height="1"
       fill="1"
       fillcolor="black"
@@ -1649,7 +1713,7 @@
       strokecolor="black"
     />
     <group name="Fig10.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[689, 617, 118, 30]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[689, 617, 185, 59]"
          href="-64--88-2-2-1c9e4532:142ba38e10c:-8000:0000000000000897"
          fill="0"
          fillcolor="white"
@@ -1662,18 +1726,66 @@
       <rectangle name="Fig10.4.0"
         x="689"
         y="617"
-        width="118"
-        height="30"
+        width="185"
+        height="59"
         fill="0"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
       />
+      <text name="Fig10.4.1"
+        x="689"
+        y="617"
+        width="185"
+        height="17"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >income : ArrayList&lt;double&gt;</text>
+      <text name="Fig10.4.2"
+        x="689"
+        y="634"
+        width="185"
+        height="17"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >expenditures : ArrayList&lt;double&gt;</text>
+      <text name="Fig10.4.3"
+        x="689"
+        y="651"
+        width="185"
+        height="23"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >results : ArrayList&lt;double&gt;</text>
     </group>
     <rectangle name="Fig10.5"
       x="688"
-      y="647"
-      width="120"
+      y="675"
+      width="187"
       height="1"
       fill="1"
       fillcolor="black"
@@ -1681,7 +1793,7 @@
       strokecolor="black"
     />
     <group name="Fig10.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[689, 648, 118, 30]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[689, 676, 185, 21]"
          href="-64--88-2-2-1c9e4532:142ba38e10c:-8000:0000000000000897"
          fill="0"
          fillcolor="white"
@@ -1693,9 +1805,9 @@
       
       <rectangle name="Fig10.6.0"
         x="689"
-        y="648"
-        width="118"
-        height="30"
+        y="676"
+        width="185"
+        height="21"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -1754,7 +1866,7 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="807"
+      <moveto x="874"
               y="640" />
       <lineto x="992"
               y="640" />

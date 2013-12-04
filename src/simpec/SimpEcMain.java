@@ -1,6 +1,6 @@
 package simpec;
 
-import simpecgui.SimpEcWindow;
+import simpec.gui.SimpEcWindow;
 
 public class SimpEcMain {
 	public static void main(String[]args) {

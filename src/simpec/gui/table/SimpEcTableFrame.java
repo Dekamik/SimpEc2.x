@@ -1,4 +1,4 @@
-package simpecgui;
+package simpec.gui.table;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;

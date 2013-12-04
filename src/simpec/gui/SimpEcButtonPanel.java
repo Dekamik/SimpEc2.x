@@ -1,4 +1,4 @@
-package simpecgui;
+package simpec.gui;
 
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
