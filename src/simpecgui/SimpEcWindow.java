@@ -7,6 +7,8 @@ import java.awt.Dimension;
 import javax.swing.JDesktopPane;
 import javax.swing.JFrame;
 
+import simpecevents.CreateTable;
+
 @SuppressWarnings("serial")
 public class SimpEcWindow extends JFrame {
 	
@@ -23,6 +25,7 @@ public class SimpEcWindow extends JFrame {
 		setJMenuBar(menuBar);
 		add(buttonPanel, BorderLayout.NORTH);
 		add(workspace, BorderLayout.CENTER);
+		addAllListeners();
 		
 		setMinimumSize(new Dimension(300, 300));
 		setExtendedState(MAXIMIZED_BOTH);
@@ -38,5 +41,10 @@ public class SimpEcWindow extends JFrame {
 	
 	private void styleComponents() {
 		workspace.setBackground(Color.GRAY);
+	}
+	
+	private void addAllListeners() {
+		menuBar.newItem.addActionListener(new CreateTable(workspace));
+		buttonPanel.newButton.addActionListener(new CreateTable(workspace));
 	}
 }
