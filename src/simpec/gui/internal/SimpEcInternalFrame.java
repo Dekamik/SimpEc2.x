@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 
 import javax.swing.JInternalFrame;
+import javax.swing.JPanel;
 
 
 /**
@@ -17,13 +18,19 @@ public class SimpEcInternalFrame extends JInternalFrame {
 	
 	public static final int BASIC_TABLE = 1;
 	
-	SimpEcFrameComponent gui;
+	JPanel content;
 	
-	public SimpEcInternalFrame(String name, int content) {
+	/**
+	 * Creates an internal frame with the name and content specified.
+	 * 
+	 * @param name		A String specifying the name of the frame
+	 * @param content	An int specifying what content the frame will contain
+	 */
+	public SimpEcInternalFrame(String name, int contentType) {
 		super(name);
 		setLayout(new BorderLayout());
 		 
-		add(gui = selectComponent(content));
+		add(this.content = selectComponent(contentType));
 		
 		setIconifiable(true);
 		setClosable(true);
@@ -33,8 +40,8 @@ public class SimpEcInternalFrame extends JInternalFrame {
 		setVisible(true);
 	}
 	
-	private SimpEcFrameComponent selectComponent(int content) {
-		switch(content) {
+	private JPanel selectComponent(int contentType) {
+		switch(contentType) {
 		case 1: return new BasicTableComponent();
 		}
 		return null;

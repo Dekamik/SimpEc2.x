@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Dec 04 19:47:48 CET 2013'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Dec 04 19:55:01 CET 2013'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -2280,7 +2280,7 @@
     </path>
   </group>
   <group name="Fig16"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1176, 840, 128, 68]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[1168, 840, 128, 68]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="-126--27--111--47--1dde6f39:142be971591:-8000:0000000000000B2B"
        fill="1"
        fillcolor="white"
@@ -2291,7 +2291,7 @@
     </private>
     
     <rectangle name="Fig16.0"
-      x="1176"
+      x="1168"
       y="840"
       width="128"
       height="68"
@@ -2301,7 +2301,7 @@
       strokecolor="black"
     />
     <text name="Fig16.1"
-      x="1177"
+      x="1169"
       y="841"
       width="126"
       height="23"
@@ -2317,7 +2317,7 @@
       justification="Center"
     >(Another Component)</text>
     <group name="Fig16.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1177, 841, 64, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1169, 841, 64, 0]"
          href="-126--27--111--47--1dde6f39:142be971591:-8000:0000000000000B2B"
          fill="0"
          fillcolor="white"
@@ -2329,7 +2329,7 @@
       </private>
       
       <rectangle name="Fig16.2.0"
-        x="1177"
+        x="1169"
         y="841"
         width="64"
         height="0"
@@ -2340,7 +2340,7 @@
       />
     </group>
     <rectangle name="Fig16.3"
-      x="1176"
+      x="1168"
       y="864"
       width="128"
       height="1"
@@ -2350,7 +2350,7 @@
       strokecolor="black"
     />
     <group name="Fig16.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1177, 865, 126, 21]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[1169, 865, 126, 21]"
          href="-126--27--111--47--1dde6f39:142be971591:-8000:0000000000000B2B"
          fill="0"
          fillcolor="white"
@@ -2361,7 +2361,7 @@
       </private>
       
       <rectangle name="Fig16.4.0"
-        x="1177"
+        x="1169"
         y="865"
         width="126"
         height="21"
@@ -2372,7 +2372,7 @@
       />
     </group>
     <rectangle name="Fig16.5"
-      x="1176"
+      x="1168"
       y="885"
       width="128"
       height="1"
@@ -2382,7 +2382,7 @@
       strokecolor="black"
     />
     <group name="Fig16.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1177, 886, 126, 21]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[1169, 886, 126, 21]"
          href="-126--27--111--47--1dde6f39:142be971591:-8000:0000000000000B2B"
          fill="0"
          fillcolor="white"
@@ -2393,7 +2393,7 @@
       </private>
       
       <rectangle name="Fig16.6.0"
-        x="1177"
+        x="1169"
         y="886"
         width="126"
         height="21"
@@ -2585,7 +2585,7 @@
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="1176"
+      <moveto x="1168"
               y="872" />
       <lineto x="1136"
               y="872" />

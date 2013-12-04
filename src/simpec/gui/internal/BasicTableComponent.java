@@ -15,7 +15,7 @@ import simpec.data.BasicTableData;
  * @author Dennis von Bargen
  */
 @SuppressWarnings("serial")
-public class BasicTableComponent extends SimpEcFrameComponent {
+public class BasicTableComponent extends JPanel {
 	
 	JTabbedPane p;
 	JPanel income, expenditures, results;
