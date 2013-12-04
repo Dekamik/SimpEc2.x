@@ -8,9 +8,13 @@ import javax.swing.JInternalFrame;
 @SuppressWarnings("serial")
 public class SimpEcTableFrame extends JInternalFrame {
 	
+	SimpEcTable gui;
+	
 	public SimpEcTableFrame(String name) {
 		super(name);
 		setLayout(new BorderLayout());
+		
+		add(gui = new SimpEcTable());
 		
 		setIconifiable(true);
 		setClosable(true);
