@@ -15,7 +15,7 @@ import simpec.gui.internal.SimpEcInternalFrame;
 public class SimpEcWindow extends JFrame {
 	
 	private SimpEcMenuBar menuBar;
-	private SimpEcButtonPanel buttonPanel;
+	private SimpEcToolBar buttonPanel;
 	private JDesktopPane workspace;
 	
 	public SimpEcWindow() {
@@ -37,7 +37,7 @@ public class SimpEcWindow extends JFrame {
 	
 	private void declareComponents() {
 		menuBar = new SimpEcMenuBar();
-		buttonPanel = new SimpEcButtonPanel();
+		buttonPanel = new SimpEcToolBar();
 		workspace = new JDesktopPane();
 	}
 	

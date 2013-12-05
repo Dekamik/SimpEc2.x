@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Dec 04 20:17:26 CET 2013'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Dec 04 20:35:24 CET 2013'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -2239,8 +2239,8 @@
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-126--27--111--47--1dde6f39:142be971591:-8000:0000000000000B20"
-                        angle="149.0"
-                        offset="29" />
+                        angle="108.0"
+                        offset="18" />
       <argouml:pathitem figname="Fig15.2"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"

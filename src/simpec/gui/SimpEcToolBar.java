@@ -1,17 +1,15 @@
 package simpec.gui;
 
-import javax.swing.BoxLayout;
 import javax.swing.JButton;
-import javax.swing.JPanel;
+import javax.swing.JToolBar;
 
 @SuppressWarnings("serial")
-public class SimpEcButtonPanel extends JPanel{
+public class SimpEcToolBar extends JToolBar {
 	
 	public JButton newButton, loadButton, calculatorButton, calendarButton;
 	
-	public SimpEcButtonPanel() {
+	public SimpEcToolBar() {
 		super();
-		setLayout(new BoxLayout(this, BoxLayout.LINE_AXIS));
 		createAllButtons();
 	}
 	
